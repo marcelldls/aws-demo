@@ -4,7 +4,7 @@ Terraform assumes all `.tf` files in this directory are the same deployment
 
 <https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs>
 
-## Login
+## Set credientials
 ```
 aws configure
 ```
