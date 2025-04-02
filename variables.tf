@@ -13,3 +13,7 @@ variable "my_ip" {
   type        = string
   description = "Your IP address in CIDR notation (use * if not known)"
 }
+
+variable "region" {
+  type = string
+}
