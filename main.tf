@@ -32,7 +32,7 @@ resource "aws_instance" "example_server" {
   vpc_security_group_ids = [aws_security_group.basic_security.id]
   user_data              = var.start_up_script
 
-  tags {
+  tags = {
     Name = "example_server"
   }
 }
