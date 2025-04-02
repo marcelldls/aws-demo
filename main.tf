@@ -26,6 +26,11 @@ resource "aws_security_group" "basic_security" {
   }
 }
 
+resource "aws_key_pair" "deployer" {
+  key_name   = "deployer-key"
+  public_key = var.public_key
+}
+
 data "aws_ami" "ubuntu" { # ami lookup
   most_recent = true
 
@@ -47,6 +52,7 @@ resource "aws_instance" "example_server" {
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.basic_security.id]
   user_data              = var.start_up_script
+  key_name               = aws_key_pair.developer
 
   tags = {
     Name = "example_server"
