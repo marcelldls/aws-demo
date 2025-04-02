@@ -13,11 +13,7 @@ variable "public_key" {
   sensitive = true
 }
 
-variable "ami" {
-  type = string
-}
-
 variable "my_ip" {
   type        = string
-  description = "Your IP address (* if not known)"
+  description = "Your IP address in CIDR notation (use * if not known)"
 }
