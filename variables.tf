@@ -1,7 +1,3 @@
-variable "region" {
-  type = string
-}
-
 variable "start_up_script" {
   type    = string
   default = "scripts/start.sh"
