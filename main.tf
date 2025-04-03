@@ -28,7 +28,7 @@ resource "aws_security_group" "basic_security" {
 
 resource "aws_key_pair" "deployer" {
   key_name   = "deployer-key"
-  public_key = "${file(var.public_key)}"
+  public_key = file(var.public_key)
 }
 
 data "aws_ami" "ubuntu" { # ami lookup
