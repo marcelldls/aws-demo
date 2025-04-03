@@ -1,1 +1,1 @@
-region = "eu-west-1"
+public_key="~/.ssh/awskey.pub"

@@ -5,15 +5,9 @@ variable "start_up_script" {
 
 variable "public_key" {
   type      = string
-  default   = "~/.ssh/awskey.pub"
-  sensitive = true
 }
 
 variable "my_ip" {
   type        = string
   description = "Your IP address in CIDR notation (use * if not known)"
-}
-
-variable "region" {
-  type = string
 }
