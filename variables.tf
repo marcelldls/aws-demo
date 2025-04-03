@@ -4,7 +4,7 @@ variable "start_up_script" {
 }
 
 variable "public_key" {
-  type      = string
+  type = string
 }
 
 variable "my_ip" {

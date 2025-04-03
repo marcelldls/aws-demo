@@ -1,1 +1,1 @@
-public_key="~/.ssh/awskey.pub"
+public_key = "~/.ssh/awskey.pub"
